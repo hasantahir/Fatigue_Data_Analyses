@@ -1,0 +1,88 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=4.521in,
+height=3.239in,
+at={(0.758in,0.808in)},
+scale only axis,
+xmin=1,
+xmax=7,
+xtick={1,2,3,4,5,6,7},
+xticklabels={{Pre-1},{Pre-2},{Pre-3},{Post - 0 min},{Post - 1 min},{Post - 5 min},{Post - 10 min}},
+xticklabel style={rotate=270},
+ymin=0,
+ymax=3,
+ylabel style={font=\color{white!15!black}},
+ylabel={Amplitude (a.u.)},
+axis background/.style={fill=white},
+title style={font=\bfseries},
+title={Wrist - Sample Entropy  - Pre and Post MVC},
+xmajorgrids,
+ymajorgrids,
+legend style={legend cell align=left, align=left, draw=white!15!black}
+]
+
+\addplot[area legend, draw=none, fill=red, fill opacity=0.2]
+table[row sep=crcr] {%
+x	y\\
+1	0.548008298384687\\
+2	0.797395996436954\\
+3	0.798533447237579\\
+4	0.963583183535317\\
+5	0.967277794674881\\
+6	0.614383222670244\\
+7	1.02720014634179\\
+7	1.78480072300592\\
+6	1.40000104916936\\
+5	1.63502304846353\\
+4	1.88511730749307\\
+3	1.7662884534776\\
+2	1.83094232312963\\
+1	1.62275120844633\\
+}--cycle;
+\addlegendentry{data1}
+
+\addplot [color=white!55!red]
+  table[row sep=crcr]{%
+1	0.548008298384687\\
+2	0.797395996436954\\
+3	0.798533447237579\\
+4	0.963583183535317\\
+5	0.967277794674881\\
+6	0.614383222670244\\
+7	1.02720014634179\\
+};
+\addlegendentry{data2}
+
+\addplot [color=white!55!red]
+  table[row sep=crcr]{%
+1	1.62275120844633\\
+2	1.83094232312963\\
+3	1.7662884534776\\
+4	1.88511730749307\\
+5	1.63502304846353\\
+6	1.40000104916936\\
+7	1.78480072300592\\
+};
+\addlegendentry{data3}
+
+\addplot [color=red, mark=*, mark options={solid, fill=white!20!red, red}]
+  table[row sep=crcr]{%
+1	1.08537975341551\\
+2	1.31416915978329\\
+3	1.28241095035759\\
+4	1.4243502455142\\
+5	1.30115042156921\\
+6	1.0071921359198\\
+7	1.40600043467386\\
+};
+\addlegendentry{data4}
+
+\end{axis}
+\end{tikzpicture}%

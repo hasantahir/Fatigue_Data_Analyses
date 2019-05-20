@@ -1,0 +1,4 @@
+Noise due to hand movements
+
+Sampling frequency is too low
+

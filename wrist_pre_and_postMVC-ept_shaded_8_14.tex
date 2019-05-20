@@ -1,0 +1,88 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=4.521in,
+height=3.239in,
+at={(0.758in,0.808in)},
+scale only axis,
+xmin=1,
+xmax=7,
+xtick={1,2,3,4,5,6,7},
+xticklabels={{Pre-1},{Pre-2},{Pre-3},{Post - 0 min},{Post - 1 min},{Post - 5 min},{Post - 10 min}},
+xticklabel style={rotate=270},
+ymin=0,
+ymax=100,
+ylabel style={font=\color{white!15!black}},
+ylabel={PSD \%},
+axis background/.style={fill=white},
+title style={font=\bfseries},
+title={Wrist - PSD Distribution in 8-14 Hz  - Pre and Post MVC},
+xmajorgrids,
+ymajorgrids,
+legend style={legend cell align=left, align=left, draw=white!15!black}
+]
+
+\addplot[area legend, draw=none, fill=red, fill opacity=0.2]
+table[row sep=crcr] {%
+x	y\\
+1	32.8082874012045\\
+2	31.3256129523521\\
+3	31.5617862869384\\
+4	37.1299415989113\\
+5	24.9888842190379\\
+6	24.3684273804255\\
+7	28.3768416370928\\
+7	55.4058183538883\\
+6	55.7424462429782\\
+5	51.1684435646279\\
+4	66.2936362818558\\
+3	68.9822438081934\\
+2	62.2116037638803\\
+1	59.6566912502486\\
+}--cycle;
+\addlegendentry{data1}
+
+\addplot [color=white!55!red]
+  table[row sep=crcr]{%
+1	32.8082874012045\\
+2	31.3256129523521\\
+3	31.5617862869384\\
+4	37.1299415989113\\
+5	24.9888842190379\\
+6	24.3684273804255\\
+7	28.3768416370928\\
+};
+\addlegendentry{data2}
+
+\addplot [color=white!55!red]
+  table[row sep=crcr]{%
+1	59.6566912502486\\
+2	62.2116037638803\\
+3	68.9822438081934\\
+4	66.2936362818558\\
+5	51.1684435646279\\
+6	55.7424462429782\\
+7	55.4058183538883\\
+};
+\addlegendentry{data3}
+
+\addplot [color=red, mark=*, mark options={solid, fill=white!20!red, red}]
+  table[row sep=crcr]{%
+1	46.2324893257265\\
+2	46.7686083581162\\
+3	50.2720150475659\\
+4	51.7117889403835\\
+5	38.0786638918329\\
+6	40.0554368117018\\
+7	41.8913299954906\\
+};
+\addlegendentry{data4}
+
+\end{axis}
+\end{tikzpicture}%

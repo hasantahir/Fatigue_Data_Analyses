@@ -1,0 +1,93 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=4.521in,
+height=3.566in,
+at={(0.758in,0.481in)},
+scale only axis,
+xmin=1,
+xmax=8,
+xtick={1,2,3,4,5,6,7,8},
+xticklabels={{1},{2},{3},{4},{5},{N - 2},{N - 1},{N}},
+xticklabel style={rotate=270},
+ymin=0,
+ymax=100,
+ylabel style={font=\color{white!15!black}},
+ylabel={PSD \%},
+axis background/.style={fill=white},
+title style={font=\bfseries},
+title={Wrist - PSD Distribution in 8-14 Hz  - First and last four 30 \% MVC},
+xmajorgrids,
+ymajorgrids,
+legend style={legend cell align=left, align=left, draw=white!15!black}
+]
+
+\addplot[area legend, draw=none, fill=blue, fill opacity=0.2]
+table[row sep=crcr] {%
+x	y\\
+1	40.4354937700608\\
+2	39.093708287903\\
+3	38.0589949572652\\
+4	33.3433837507469\\
+5	39.2998172003453\\
+6	32.3898097891681\\
+7	35.4760165211279\\
+8	40.5856527628041\\
+8	71.3276534949221\\
+7	77.5035211155284\\
+6	74.7516388511736\\
+5	67.1360857967754\\
+4	68.3352135507376\\
+3	70.4176763665959\\
+2	64.6387478706341\\
+1	63.5304459815161\\
+}--cycle;
+\addlegendentry{data1}
+
+\addplot [color=white!55!blue]
+  table[row sep=crcr]{%
+1	40.4354937700608\\
+2	39.093708287903\\
+3	38.0589949572652\\
+4	33.3433837507469\\
+5	39.2998172003453\\
+6	32.3898097891681\\
+7	35.4760165211279\\
+8	40.5856527628041\\
+};
+\addlegendentry{data2}
+
+\addplot [color=white!55!blue]
+  table[row sep=crcr]{%
+1	63.5304459815161\\
+2	64.6387478706341\\
+3	70.4176763665959\\
+4	68.3352135507376\\
+5	67.1360857967754\\
+6	74.7516388511736\\
+7	77.5035211155284\\
+8	71.3276534949221\\
+};
+\addlegendentry{data3}
+
+\addplot [color=blue, mark=*, mark options={solid, fill=white!20!red, blue}]
+  table[row sep=crcr]{%
+1	51.9829698757884\\
+2	51.8662280792685\\
+3	54.2383356619306\\
+4	50.8392986507422\\
+5	53.2179514985603\\
+6	53.5707243201709\\
+7	56.4897688183282\\
+8	55.9566531288631\\
+};
+\addlegendentry{data4}
+
+\end{axis}
+\end{tikzpicture}%

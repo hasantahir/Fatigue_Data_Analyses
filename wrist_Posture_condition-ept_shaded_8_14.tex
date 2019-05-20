@@ -1,0 +1,95 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=4.521in,
+height=3.566in,
+at={(0.758in,0.481in)},
+scale only axis,
+xmin=1,
+xmax=5,
+xtick={1,2,3,4,5},
+xticklabels={{Pre-},{0 min},{1 min},{5 min},{10 min}},
+xticklabel style={rotate=270},
+ymin=0,
+ymax=100,
+ylabel style={font=\color{white!15!black}},
+ylabel={PSD \%},
+axis background/.style={fill=white},
+title style={font=\bfseries},
+title={Wrist - PSD Distribution in 8-14 Hz  - Posture Condition},
+xmajorgrids,
+ymajorgrids,
+legend style={legend cell align=left, align=left, draw=white!15!black}
+]
+
+\addplot[area legend, draw=none, fill=red, fill opacity=0.2]
+table[row sep=crcr] {%
+x	y\\
+1	24.273676126771\\
+2	22.4427181458878\\
+3	23.3310417306578\\
+4	18.8982580771813\\
+5	23.1826439292589\\
+5	35.0048242896699\\
+4	33.5156886338278\\
+3	37.3809361617541\\
+2	42.0037474428305\\
+1	37.6658202584363\\
+}--cycle;
+\addlegendentry{data1}
+
+\addplot [color=white!55!red]
+  table[row sep=crcr]{%
+1	24.273676126771\\
+2	22.4427181458878\\
+3	23.3310417306578\\
+4	18.8982580771813\\
+5	23.1826439292589\\
+};
+\addlegendentry{data2}
+
+\addplot [color=white!55!red]
+  table[row sep=crcr]{%
+1	37.6658202584363\\
+2	42.0037474428305\\
+3	37.3809361617541\\
+4	33.5156886338278\\
+5	35.0048242896699\\
+};
+\addlegendentry{data3}
+
+\addplot [color=red]
+  table[row sep=crcr]{%
+1	30.9697481926037\\
+2	32.2232327943591\\
+3	30.355988946206\\
+4	26.2069733555046\\
+5	29.0937341094644\\
+};
+\addlegendentry{data4}
+
+\end{axis}
+
+\begin{axis}[%
+width=5.833in,
+height=4.375in,
+at={(0in,0in)},
+scale only axis,
+xmin=0,
+xmax=1,
+ymin=0,
+ymax=1,
+axis line style={draw=none},
+ticks=none,
+axis x line*=bottom,
+axis y line*=left,
+legend style={legend cell align=left, align=left, draw=white!15!black}
+]
+\end{axis}
+\end{tikzpicture}%

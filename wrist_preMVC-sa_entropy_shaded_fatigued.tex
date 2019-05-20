@@ -1,0 +1,68 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=4.521in,
+height=3.566in,
+at={(0.758in,0.481in)},
+scale only axis,
+xmin=1,
+xmax=3,
+xtick={1,2,3},
+xticklabels={{Pre-1},{Pre-2},{Pre-3}},
+xticklabel style={rotate=270},
+ymin=0,
+ymax=3,
+ylabel style={font=\color{white!15!black}},
+ylabel={Amplitude (a.u.)},
+axis background/.style={fill=white},
+title style={font=\bfseries},
+title={Wrist - Sample Entropy  - Pre MVC},
+xmajorgrids,
+ymajorgrids,
+legend style={legend cell align=left, align=left, draw=white!15!black}
+]
+
+\addplot[area legend, draw=none, fill=blue, fill opacity=0.2]
+table[row sep=crcr] {%
+x	y\\
+1	0.548008298384687\\
+2	0.797395996436954\\
+3	0.798533447237579\\
+3	1.7662884534776\\
+2	1.83094232312963\\
+1	1.62275120844633\\
+}--cycle;
+\addlegendentry{data1}
+
+\addplot [color=white!55!blue]
+  table[row sep=crcr]{%
+1	0.548008298384687\\
+2	0.797395996436954\\
+3	0.798533447237579\\
+};
+\addlegendentry{data2}
+
+\addplot [color=white!55!blue]
+  table[row sep=crcr]{%
+1	1.62275120844633\\
+2	1.83094232312963\\
+3	1.7662884534776\\
+};
+\addlegendentry{data3}
+
+\addplot [color=blue]
+  table[row sep=crcr]{%
+1	1.08537975341551\\
+2	1.31416915978329\\
+3	1.28241095035759\\
+};
+\addlegendentry{data4}
+
+\end{axis}
+\end{tikzpicture}%

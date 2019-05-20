@@ -1,0 +1,78 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=4.521in,
+height=3.566in,
+at={(0.758in,0.481in)},
+scale only axis,
+xmin=1,
+xmax=5,
+xtick={1,2,3,4,5},
+xticklabels={{Pre-},{0 min},{1 min},{5 min},{10 min}},
+xticklabel style={rotate=270},
+ymin=0,
+ymax=100,
+ylabel style={font=\color{white!15!black}},
+ylabel={PSD \%},
+axis background/.style={fill=white},
+title style={font=\bfseries},
+title={Wrist - PSD Distribution in 8-14 Hz  - Loaded Posture Condition},
+xmajorgrids,
+ymajorgrids,
+legend style={legend cell align=left, align=left, draw=white!15!black}
+]
+
+\addplot[area legend, draw=none, fill=blue, fill opacity=0.2]
+table[row sep=crcr] {%
+x	y\\
+1	25.6848214818291\\
+2	23.8936567023068\\
+3	22.6046062534445\\
+4	21.2792857191856\\
+5	24.4751502293341\\
+5	45.088721185657\\
+4	46.3106221635727\\
+3	40.8231991475252\\
+2	48.3710673632941\\
+1	44.8309876328417\\
+}--cycle;
+\addlegendentry{data1}
+
+\addplot [color=white!55!blue]
+  table[row sep=crcr]{%
+1	25.6848214818291\\
+2	23.8936567023068\\
+3	22.6046062534445\\
+4	21.2792857191856\\
+5	24.4751502293341\\
+};
+\addlegendentry{data2}
+
+\addplot [color=white!55!blue]
+  table[row sep=crcr]{%
+1	44.8309876328417\\
+2	48.3710673632941\\
+3	40.8231991475252\\
+4	46.3106221635727\\
+5	45.088721185657\\
+};
+\addlegendentry{data3}
+
+\addplot [color=blue]
+  table[row sep=crcr]{%
+1	35.2579045573354\\
+2	36.1323620328005\\
+3	31.7139027004849\\
+4	33.7949539413792\\
+5	34.7819357074955\\
+};
+\addlegendentry{data4}
+
+\end{axis}
+\end{tikzpicture}%

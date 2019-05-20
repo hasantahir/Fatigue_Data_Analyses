@@ -1,0 +1,86 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=4.521in,
+height=3.239in,
+at={(0.758in,0.808in)},
+scale only axis,
+xmin=1,
+xmax=7,
+xtick={1,2,3,4,5,6,7},
+xticklabels={{Pre-1},{Pre-2},{Pre-3},{Post - 0 min},{Post - 1 min},{Post - 5 min},{Post - 10 min}},
+xticklabel style={rotate=270},
+ymin=-5,
+ymax=35,
+ylabel style={font=\color{white!15!black}},
+ylabel={Amplitude (a.u.)},
+axis background/.style={fill=white},
+xmajorgrids,
+ymajorgrids,
+legend style={legend cell align=left, align=left, draw=white!15!black}
+]
+
+\addplot[area legend, draw=none, fill=red, fill opacity=0.2]
+table[row sep=crcr] {%
+x	y\\
+1	2.9595469421355\\
+2	0.674780939921526\\
+3	2.27379990565143\\
+4	2.44449490077843\\
+5	2.291601890813\\
+6	0.816968498248263\\
+7	1.33796562105515\\
+7	11.3365316497616\\
+6	18.0617475924695\\
+5	12.6894845611696\\
+4	7.72472490840304\\
+3	7.66402456556194\\
+2	10.9691526551987\\
+1	9.82730606823468\\
+}--cycle;
+\addlegendentry{data1}
+
+\addplot [color=white!55!red]
+  table[row sep=crcr]{%
+1	2.9595469421355\\
+2	0.674780939921526\\
+3	2.27379990565143\\
+4	2.44449490077843\\
+5	2.291601890813\\
+6	0.816968498248263\\
+7	1.33796562105515\\
+};
+\addlegendentry{data2}
+
+\addplot [color=white!55!red]
+  table[row sep=crcr]{%
+1	9.82730606823468\\
+2	10.9691526551987\\
+3	7.66402456556194\\
+4	7.72472490840304\\
+5	12.6894845611696\\
+6	18.0617475924695\\
+7	11.3365316497616\\
+};
+\addlegendentry{data3}
+
+\addplot [color=red, mark=*, mark options={solid, fill=white!20!red, red}]
+  table[row sep=crcr]{%
+1	6.39342650518509\\
+2	5.82196679756012\\
+3	4.96891223560668\\
+4	5.08460990459073\\
+5	7.49054322599129\\
+6	9.4393580453589\\
+7	6.33724863540836\\
+};
+\addlegendentry{data4}
+
+\end{axis}
+\end{tikzpicture}%

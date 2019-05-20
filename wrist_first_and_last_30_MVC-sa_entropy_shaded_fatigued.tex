@@ -1,0 +1,93 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=4.521in,
+height=3.562in,
+at={(0.758in,0.485in)},
+scale only axis,
+xmin=1,
+xmax=8,
+xtick={1,2,3,4,5,6,7,8},
+xticklabels={{Pre - 1},{Pre - 2},{Pre - 3},{Pre - 4},{Pre - 5},{Post - 1},{Post - 2},{Post - 3}},
+xticklabel style={rotate=270},
+ymin=0,
+ymax=3,
+ylabel style={font=\color{white!15!black}},
+ylabel={Amplitude (a.u.)},
+axis background/.style={fill=white},
+title style={font=\bfseries},
+title={Wrist - Sample Entropy  - First five and last three 30 \% MVC},
+xmajorgrids,
+ymajorgrids,
+legend style={legend cell align=left, align=left, draw=white!15!black}
+]
+
+\addplot[area legend, draw=none, fill=blue, fill opacity=0.2]
+table[row sep=crcr] {%
+x	y\\
+1	1.89276806786364\\
+2	1.84896737216018\\
+3	1.88849914031069\\
+4	1.57565755505201\\
+5	1.77840406384725\\
+6	1.16686779744608\\
+7	1.18984682889582\\
+8	1.63270282405647\\
+8	2.10500614686896\\
+7	2.08813841594212\\
+6	1.96494147847426\\
+5	2.10257492425534\\
+4	2.12367377341751\\
+3	2.08821782613263\\
+2	2.11377357277998\\
+1	2.15220041900556\\
+}--cycle;
+\addlegendentry{data1}
+
+\addplot [color=white!55!blue]
+  table[row sep=crcr]{%
+1	1.89276806786364\\
+2	1.84896737216018\\
+3	1.88849914031069\\
+4	1.57565755505201\\
+5	1.77840406384725\\
+6	1.16686779744608\\
+7	1.18984682889582\\
+8	1.63270282405647\\
+};
+\addlegendentry{data2}
+
+\addplot [color=white!55!blue]
+  table[row sep=crcr]{%
+1	2.15220041900556\\
+2	2.11377357277998\\
+3	2.08821782613263\\
+4	2.12367377341751\\
+5	2.10257492425534\\
+6	1.96494147847426\\
+7	2.08813841594212\\
+8	2.10500614686896\\
+};
+\addlegendentry{data3}
+
+\addplot [color=blue, mark=*, mark options={solid, fill=white!20!red, blue}]
+  table[row sep=crcr]{%
+1	2.0224842434346\\
+2	1.98137047247008\\
+3	1.98835848322166\\
+4	1.84966566423476\\
+5	1.9404894940513\\
+6	1.56590463796017\\
+7	1.63899262241897\\
+8	1.86885448546271\\
+};
+\addlegendentry{data4}
+
+\end{axis}
+\end{tikzpicture}%

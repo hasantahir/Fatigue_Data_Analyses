@@ -1,0 +1,91 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=4.521in,
+height=3.566in,
+at={(0.758in,0.481in)},
+scale only axis,
+xmin=1,
+xmax=8,
+xtick={1,2,3,4,5,6,7,8},
+xticklabels={{1},{2},{3},{4},{5},{N - 2},{N - 1},{N}},
+xticklabel style={rotate=270},
+ymin=0,
+ymax=100,
+ylabel style={font=\color{white!15!black}},
+ylabel={PSD \%},
+axis background/.style={fill=white},
+xmajorgrids,
+ymajorgrids,
+legend style={legend cell align=left, align=left, draw=white!15!black}
+]
+
+\addplot[area legend, draw=none, fill=blue, fill opacity=0.2]
+table[row sep=crcr] {%
+x	y\\
+1	18.361141013879\\
+2	16.7278902609799\\
+3	15.279068556714\\
+4	17.7475580320977\\
+5	17.7358637212702\\
+6	12.3481792556721\\
+7	9.71897196349151\\
+8	9.55502249259987\\
+8	39.5595414266304\\
+7	44.4873330341753\\
+6	44.7941099282901\\
+5	33.9577944904482\\
+4	27.9524208681652\\
+3	37.6401035391764\\
+2	34.688726842297\\
+1	34.1583559737828\\
+}--cycle;
+\addlegendentry{data1}
+
+\addplot [color=white!55!blue]
+  table[row sep=crcr]{%
+1	18.361141013879\\
+2	16.7278902609799\\
+3	15.279068556714\\
+4	17.7475580320977\\
+5	17.7358637212702\\
+6	12.3481792556721\\
+7	9.71897196349151\\
+8	9.55502249259987\\
+};
+\addlegendentry{data2}
+
+\addplot [color=white!55!blue]
+  table[row sep=crcr]{%
+1	34.1583559737828\\
+2	34.688726842297\\
+3	37.6401035391764\\
+4	27.9524208681652\\
+5	33.9577944904482\\
+6	44.7941099282901\\
+7	44.4873330341753\\
+8	39.5595414266304\\
+};
+\addlegendentry{data3}
+
+\addplot [color=blue, mark=*, mark options={solid, fill=white!20!red, blue}]
+  table[row sep=crcr]{%
+1	26.2597484938309\\
+2	25.7083085516384\\
+3	26.4595860479452\\
+4	22.8499894501314\\
+5	25.8468291058592\\
+6	28.5711445919811\\
+7	27.1031524988334\\
+8	24.5572819596151\\
+};
+\addlegendentry{data4}
+
+\end{axis}
+\end{tikzpicture}%

@@ -1,0 +1,75 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\definecolor{mycolor1}{rgb}{0.00000,0.44700,0.74100}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=4.521in,
+height=3.566in,
+at={(0.758in,0.481in)},
+scale only axis,
+xmin=1,
+xmax=4,
+xtick={1,2,3,4},
+xticklabels={{0 min},{1 min},{5 min},{10 min}},
+xticklabel style={rotate=270},
+ymin=0,
+ymax=100,
+ylabel style={font=\color{white!15!black}},
+ylabel={PSD \%},
+axis background/.style={fill=white},
+title style={font=\bfseries},
+title={Wrist - PSD Distribution in 8-14 Hz  - Post MVC},
+xmajorgrids,
+ymajorgrids,
+legend style={legend cell align=left, align=left, draw=white!15!black}
+]
+
+\addplot[area legend, draw=none, fill=mycolor1, fill opacity=0.2]
+table[row sep=crcr] {%
+x	y\\
+1	37.1299415989113\\
+2	24.9888842190379\\
+3	24.3684273804255\\
+4	28.3768416370928\\
+4	55.4058183538883\\
+3	55.7424462429782\\
+2	51.1684435646279\\
+1	66.2936362818558\\
+}--cycle;
+\addlegendentry{data1}
+
+\addplot [color=white!55!mycolor1]
+  table[row sep=crcr]{%
+1	37.1299415989113\\
+2	24.9888842190379\\
+3	24.3684273804255\\
+4	28.3768416370928\\
+};
+\addlegendentry{data2}
+
+\addplot [color=white!55!mycolor1]
+  table[row sep=crcr]{%
+1	66.2936362818558\\
+2	51.1684435646279\\
+3	55.7424462429782\\
+4	55.4058183538883\\
+};
+\addlegendentry{data3}
+
+\addplot [color=mycolor1, mark=o, mark options={solid, mycolor1}]
+  table[row sep=crcr]{%
+1	51.7117889403835\\
+2	38.0786638918329\\
+3	40.0554368117018\\
+4	41.8913299954906\\
+};
+\addlegendentry{data4}
+
+\end{axis}
+\end{tikzpicture}%

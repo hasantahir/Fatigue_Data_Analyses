@@ -1,0 +1,193 @@
+﻿@article{RN16,
+   author = {Bhidayasiri, R.},
+   title = {Differential diagnosis of common tremor syndromes},
+   journal = {Postgraduate Medical Journal},
+   volume = {81},
+   number = {962},
+   pages = {756-762},
+   ISSN = {0032-5473},
+   DOI = {10.1136/pgmj.2005.032979},
+   url = {<Go to ISI>://WOS:000233866500007},
+   year = {2005},
+   type = {Journal Article}
+}
+
+@article{RN1,
+   author = {Carignan, B. and Daneault, J. F. and Duval, C.},
+   title = {Quantifying the importance of high frequency components on the amplitude of physiological tremor},
+   journal = {Experimental Brain Research},
+   volume = {202},
+   number = {2},
+   pages = {299-306},
+   ISSN = {0014-4819},
+   DOI = {10.1007/s00221-009-2132-7},
+   url = {<Go to ISI>://WOS:000276220300004},
+   year = {2010},
+   type = {Journal Article}
+}
+
+@article{RN23,
+   author = {Carignan, B. and Daneault, J. F. and Duval, C.},
+   title = {The organization of upper limb physiological tremor},
+   journal = {Eur J Appl Physiol},
+   volume = {112},
+   number = {4},
+   pages = {1269-84},
+   ISSN = {1439-6327 (Electronic)
+1439-6319 (Linking)},
+   DOI = {10.1007/s00421-011-2080-3},
+   url = {https://www.ncbi.nlm.nih.gov/pubmed/21785861},
+   year = {2012},
+   type = {Journal Article}
+}
+
+@article{RN18,
+   author = {Deuschl, G. and Raethjen, J. and Lindemann, M. and Krack, P.},
+   title = {The pathophysiology of tremor},
+   journal = {Muscle & Nerve},
+   volume = {24},
+   number = {6},
+   pages = {716-735},
+   ISSN = {0148-639x},
+   DOI = {DOI 10.1002/mus.1063},
+   url = {<Go to ISI>://WOS:000168963600002},
+   year = {2001},
+   type = {Journal Article}
+}
+
+@article{RN21,
+   author = {Duval, C. and Jones, J.},
+   title = {Assessment of the amplitude of oscillations associated with high-frequency components of physiological tremor: impact of loading and signal differentiation},
+   journal = {Experimental Brain Research},
+   volume = {163},
+   number = {2},
+   pages = {261-266},
+   ISSN = {0014-4819},
+   DOI = {10.1007/s00221-005-2233-x},
+   url = {<Go to ISI>://WOS:000229506100014},
+   year = {2005},
+   type = {Journal Article}
+}
+
+@article{RN26,
+   author = {Elble, R. J.},
+   title = {Characteristics of physiologic tremor in young and elderly adults},
+   journal = {Clinical Neurophysiology},
+   volume = {114},
+   number = {4},
+   pages = {624-635},
+   ISSN = {1388-2457},
+   DOI = {10.1016/S1388-2457(03)00006-3},
+   url = {<Go to ISI>://WOS:000182442000006},
+   year = {2003},
+   type = {Journal Article}
+}
+
+@article{RN24,
+   author = {Gajewski, Jan },
+   title = {Fatigue-induced changes in tremor caused by physical efforts of different volume and intensity},
+   journal = {Acta of Bioengineering and Biomechanics},
+   volume = {8},
+   number = {2},
+   pages = {103-110},
+   year = {2006},
+   type = {Journal Article}
+}
+
+@article{RN4,
+   author = {Galinsky, T. L. and Rosa, R. R. and Wheeler, D. D.},
+   title = {Assessing Muscular Fatigue with a Portable Tremor Measurement System Suitable for Field Use},
+   journal = {Behavior Research Methods Instruments & Computers},
+   volume = {22},
+   number = {6},
+   pages = {507-516},
+   ISSN = {0743-3808},
+   DOI = {Doi 10.3758/Bf03204434},
+   url = {<Go to ISI>://WOS:A1990EP50900003},
+   year = {1990},
+   type = {Journal Article}
+}
+
+@article{RN8,
+   author = {McAuley, J. H. and Marsden, C. D.},
+   title = {Physiological and pathological tremors and rhythmic central motor control},
+   journal = {Brain},
+   volume = {123},
+   pages = {1545-1567},
+   ISSN = {0006-8950},
+   DOI = {DOI 10.1093/brain/123.8.1545},
+   url = {<Go to ISI>://WOS:000089144400002},
+   year = {2000},
+   type = {Journal Article}
+}
+
+@article{RN6,
+   author = {Morrison, S. and Kavanagh, J. and Obst, S. J. and Irwin, J. and Haseler, L. J.},
+   title = {The effects of unilateral muscle fatigue on bilateral physiological tremor},
+   journal = {Experimental Brain Research},
+   volume = {167},
+   number = {4},
+   pages = {609-621},
+   ISSN = {0014-4819},
+   DOI = {10.1007/s00221-005-0050-x},
+   url = {<Go to ISI>://WOS:000235802100010},
+   year = {2005},
+   type = {Journal Article}
+}
+
+@article{RN5,
+   author = {Morrison, S. and Sosnoff, J. J. and Heffernan, K. S. and Jae, S. Y. and Fernhall, B.},
+   title = {Aging, hypertension and physiological tremor: The contribution of the cardioballistic impulse to tremorgenesis in older adults},
+   journal = {Journal of the Neurological Sciences},
+   volume = {326},
+   number = {1-2},
+   pages = {68-74},
+   ISSN = {0022-510x},
+   DOI = {10.1016/j.jns.2013.01.016},
+   url = {<Go to ISI>://WOS:000317799200012},
+   year = {2013},
+   type = {Journal Article}
+}
+
+@article{RN7,
+   author = {Smaga, S.},
+   title = {Tremor},
+   journal = {American Family Physician},
+   volume = {68},
+   number = {8},
+   pages = {1545-1552},
+   ISSN = {0002-838x},
+   url = {<Go to ISI>://WOS:000186101100010},
+   year = {2003},
+   type = {Journal Article}
+}
+
+@article{RN22,
+   author = {Tomczak, A. and Gajewski, J. and Mazur-Rozycka, J.},
+   title = {Changes in physiological tremor resulting from sleep deprivation under conditions of increasing fatigue during prolonged military training},
+   journal = {Biol Sport},
+   volume = {31},
+   number = {4},
+   pages = {303-8},
+   ISSN = {0860-021X (Print)
+0860-021X (Linking)},
+   DOI = {10.5604/20831862.1127343},
+   url = {https://www.ncbi.nlm.nih.gov/pubmed/25609888},
+   year = {2014},
+   type = {Journal Article}
+}
+
+@article{RN2,
+   author = {Vernooij, C. A. and Lakie, M. and Reynolds, R. F.},
+   title = {The complete frequency spectrum of physiological tremor can be recreated by broadband mechanical or electrical drive},
+   journal = {Journal of Neurophysiology},
+   volume = {113},
+   number = {2},
+   pages = {647-656},
+   ISSN = {0022-3077},
+   DOI = {10.1152/jn.00519.2014},
+   url = {<Go to ISI>://WOS:000349255100020},
+   year = {2015},
+   type = {Journal Article}
+}
+

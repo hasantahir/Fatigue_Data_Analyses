@@ -1,0 +1,78 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=4.521in,
+height=3.566in,
+at={(0.758in,0.481in)},
+scale only axis,
+xmin=1,
+xmax=5,
+xtick={1,2,3,4,5},
+xticklabels={{Pre-},{0 min},{1 min},{5 min},{10 min}},
+xticklabel style={rotate=270},
+ymin=0,
+ymax=3,
+ylabel style={font=\color{white!15!black}},
+ylabel={Amplitude (a.u.)},
+axis background/.style={fill=white},
+title style={font=\bfseries},
+title={Wrist - Sample Entropy  - Posture Condition},
+xmajorgrids,
+ymajorgrids,
+legend style={legend cell align=left, align=left, draw=white!15!black}
+]
+
+\addplot[area legend, draw=none, fill=red, fill opacity=0.2]
+table[row sep=crcr] {%
+x	y\\
+1	1.16844674620474\\
+2	1.14655040524784\\
+3	0.997255405677505\\
+4	1.2279858010601\\
+5	1.0075193433308\\
+5	2.2225520774046\\
+4	2.11166447164704\\
+3	2.11098527138312\\
+2	2.03480293478238\\
+1	2.16374101875772\\
+}--cycle;
+\addlegendentry{data1}
+
+\addplot [color=white!55!red]
+  table[row sep=crcr]{%
+1	1.16844674620474\\
+2	1.14655040524784\\
+3	0.997255405677505\\
+4	1.2279858010601\\
+5	1.0075193433308\\
+};
+\addlegendentry{data2}
+
+\addplot [color=white!55!red]
+  table[row sep=crcr]{%
+1	2.16374101875772\\
+2	2.03480293478238\\
+3	2.11098527138312\\
+4	2.11166447164704\\
+5	2.2225520774046\\
+};
+\addlegendentry{data3}
+
+\addplot [color=red]
+  table[row sep=crcr]{%
+1	1.66609388248123\\
+2	1.59067667001511\\
+3	1.55412033853031\\
+4	1.66982513635357\\
+5	1.6150357103677\\
+};
+\addlegendentry{data4}
+
+\end{axis}
+\end{tikzpicture}%
